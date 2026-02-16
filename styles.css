@@ -108,22 +108,24 @@ a{color:inherit;text-decoration:none}
 /* --- Real image styling (use instead of dashed placeholders) --- */
 /* ===== PRODUCT IMAGE FIX ===== */
 
+/* Smaller product image */
+
 .product-box {
-  max-width: 420px;      /* controls width */
+  max-width: 320px;   /* ↓ reduce size */
   width: 100%;
   margin: 0 auto;
-  border-radius: 16px;
+  border-radius: 14px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .product-img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain;
 }
+
 
 /* Make left column align nicely */
 .two-col {
