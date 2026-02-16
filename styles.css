@@ -129,10 +129,3 @@ a{color:inherit;text-decoration:none}
 .two-col {
   align-items: flex-start;
 }
-
-/* Desktop sizing */
-@media (min-width: 900px) {
-  .product-box {
-    max-width: 460px;   /* slightly larger for desktop */
-  }
-}
