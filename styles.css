@@ -1,0 +1,129 @@
+/* BIOLAQA site styles — mobile-first responsive layout */
+:root{
+  --yellow:#f8eaa6;
+  --pink:#ff4f7c;
+  --pink-dark:#e63a64;
+  --accent-green:#00e676;
+  --muted:#666;
+  --container-width:1100px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;color:#222}
+a{color:inherit;text-decoration:none}
+.container{width:92%;max-width:var(--container-width);margin:0 auto}
+
+/* Topbar */
+.topbar{background:var(--yellow);border-bottom:4px solid rgba(0,0,0,0.02)}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.logo{display:flex;align-items:center;gap:10px}
+.mark{width:46px;height:46px;background:linear-gradient(180deg,#70e1f5,#ffd1d8);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#0b6}
+.brand{font-weight:800;color:#1b9;letter-spacing:1px}
+.icon-buttons{display:flex;gap:10px}
+.icon-btn{background:#fff;border:1px solid rgba(0,0,0,0.18);padding:8px 10px;border-radius:8px;box-shadow:0 2px 0 rgba(0,0,0,0.06);cursor:pointer}
+.badge{display:none;min-width:18px;height:18px;padding:0 6px;border-radius:999px;background:var(--pink);color:#fff;font-size:12px;line-height:18px;margin-left:6px}
+
+/* Navigation (equal-width tabs like screenshot) */
+.nav{background:var(--pink);}
+.nav .container{display:flex;gap:0;align-items:stretch;padding:0;overflow:hidden}
+.nav a{
+  flex:1;
+  text-align:center;
+  color:#fff;
+  padding:12px 10px;
+  font-weight:800;
+  text-transform:uppercase;
+  font-size:13px;
+  border-right:1px solid rgba(255,255,255,0.22);
+  white-space:normal;
+}
+.nav a:last-child{border-right:none}
+.nav a:hover{background:var(--pink-dark)}
+.nav a.active{background:var(--pink-dark)}
+
+/* Hero */
+.hero{display:flex;flex-direction:column;gap:18px;padding:18px 0}
+.hero-left{flex:1}
+.hero-title{font-size:28px;margin:8px 0 12px;line-height:1.02;font-weight:900;background:linear-gradient(90deg,#ff5f91,#ffa24a);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero p{color:var(--muted);margin:0 0 12px}
+.pill{display:inline-block;background:linear-gradient(90deg,var(--pink),var(--pink-dark));color:#fff;padding:10px 16px;border-radius:22px;font-weight:700}
+.hero-right{display:flex;justify-content:center}
+.product-box{width:220px;height:160px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+
+/* Two-column product page layout */
+.two-col{display:flex;flex-direction:column;gap:18px}
+.price-box{background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+.price{font-size:20px;color:var(--pink-dark);font-weight:800;margin:6px 0}
+.buy-btn{background:var(--pink);color:#fff;border:0;padding:10px 12px;border-radius:10px;cursor:pointer;font-weight:800}
+.buy-btn:hover{background:var(--pink-dark)}
+
+.specs table{width:100%;border-collapse:collapse;margin-top:12px}
+.specs td{padding:8px;border:1px solid #eee}
+
+.parts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.card{background:#fff;padding:12px;border-radius:8px;text-align:center}
+.thumb{height:90px;border-radius:8px;background:#f6f6f6;display:flex;align-items:center;justify-content:center;color:#999}
+
+.big-title{font-size:40px;color:var(--accent-green);text-align:center;margin:28px 0}
+
+/* About */
+.about{padding:18px 0}
+.team{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.member{display:flex;flex-direction:column;align-items:center;width:72px}
+.avatar{width:64px;height:64px;border-radius:50%;background:#fff;border:2px solid #eee;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+/* Video */
+.video-wrap{margin-top:12px}
+.video-frame{height:220px;border:2px solid #eee;border-radius:8px;overflow:hidden}
+
+/* Forms */
+.code-row{display:flex;gap:8px}
+.code-input{flex:1;padding:10px;border-radius:6px;border:1px solid #ddd}
+.activate-btn{padding:10px 12px;border-radius:6px;background:var(--pink);color:#fff;border:0}
+.message{margin-top:8px;color:var(--muted)}
+
+/* Footer */
+.footer{background:#f4f4f4;padding:18px 0;margin-top:28px}
+.footer .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.partners{display:flex;flex-direction:column;align-items:flex-end}
+.partner-logo{background:#fff;padding:6px 10px;border-radius:6px;margin-top:8px}
+
+/* Utilities */
+.container > h2{margin:0}
+
+/* Larger screens */
+@media(min-width:900px){
+  .hero{flex-direction:row;align-items:center;padding:36px 0}
+  .hero-title{font-size:28px;margin:8px 0 12px;line-height:1.02;font-weight:900;background:linear-gradient(90deg,#ff5f91,#ffa24a);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .product-box{width:320px;height:220px}
+  .two-col{flex-direction:row}
+  .two-col > div{flex:1}
+  .price-box{width:320px}
+  .parts-grid{grid-template-columns:repeat(4,1fr)}
+  .team{justify-content:flex-start}
+  .nav .container{justify-content:flex-start}
+}
+
+/* Small tweaks for visual parity */
+.topbar, .nav{box-shadow:0 1px 0 rgba(0,0,0,0.03)}
+/* --- Real image styling (use instead of dashed placeholders) --- */
+.product-img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* Make the product box look like a clean card */
+.product-box{
+  padding:12px;
+  border-radius:18px;
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* Larger version for product page */
+.product-box--large{
+  width:100%;
+  max-width:520px;
+  margin:0 auto;
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BIOLAQA — Bản điện tử</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="topbar"><div class="container"><div class="logo"><img src="assets/logo.svg" alt="BIOLAQA" style="width:46px;height:46px;border-radius:6px;padding:6px;background:#fff"><div class="brand">BIOLAQA</div></div><div class="icon-buttons"><button class="icon-btn" id="cart-btn">🛒<span class="badge" id="cart-badge">0</span></button><button class="icon-btn">👤</button></div></div></div>
+    <nav class="nav"><div class="container"><a href="index.html">TRANG CHỦ</a><a href="product.html">GIỚI THIỆU</a><a href="guide.html">HƯỚNG DẪN CHƠI</a><a href="digital.html">BẢN ĐIỆN TỬ</a><a href="contact.html">LIÊN HỆ</a></div></nav>
+  </header>
+
+  <main class="container">
+    <div class="section-label">Nhập code</div>
+    <form id="code-form" onsubmit="return false;" style="margin-top:10px">
+      <div class="code-row">
+        <input id="code-input" class="code-input" aria-label="Nhập mã" placeholder="Nhập mã tại đây">
+        <button id="activate-btn" class="activate-btn">Kích hoạt</button>
+      </div>
+      <div id="code-message" class="message" role="status" aria-live="polite"></div>
+    </form>
+
+    <h2 class="big-title">Điện tử</h2>
+  </main>
+
+  <footer class="footer"><div class="container"><div>📞 0862570073 • ✉️ biolaqalab@gmail.com</div><div class="partners"><div class="partner-label">ĐỐI TÁC</div><img src="assets/partner.svg" alt="partner" class="partner-logo"></div></div></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

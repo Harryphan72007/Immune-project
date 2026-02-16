@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="BIOLAQA logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3ddc97"/>
+      <stop offset="1" stop-color="#46a2ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="36" fill="white" stroke="#e5e7eb" stroke-width="6"/>
+  <!-- Simple beaker/flask -->
+  <path d="M104 56h48v12h-10v44l40 68c7 12-2 28-16 28H90c-14 0-23-16-16-28l40-68V68h-10V56z"
+        fill="url(#g)" opacity="0.95"/>
+  <path d="M96 170h64" stroke="white" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="102" cy="150" r="8" fill="white" opacity="0.9"/>
+  <circle cx="152" cy="156" r="6" fill="white" opacity="0.9"/>
+  <text x="128" y="230" text-anchor="middle" font-family="system-ui,Segoe UI,Arial" font-size="22" font-weight="800" fill="#1b9">
+    BIOLAQA
+  </text>
+</svg>
