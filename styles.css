@@ -106,24 +106,33 @@ a{color:inherit;text-decoration:none}
 /* Small tweaks for visual parity */
 .topbar, .nav{box-shadow:0 1px 0 rgba(0,0,0,0.03)}
 /* --- Real image styling (use instead of dashed placeholders) --- */
-.product-img{
-  width:100%;
-  height:auto;
-  display:block;
+/* ===== PRODUCT IMAGE FIX ===== */
+
+.product-box {
+  max-width: 420px;      /* controls width */
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* Make the product box look like a clean card */
-.product-box{
-  padding:12px;
-  border-radius:18px;
-  background:#fff;
-  border:1px solid var(--line);
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
+.product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
-/* Larger version for product page */
-.product-box--large{
-  width:100%;
-  max-width:520px;
-  margin:0 auto;
+/* Make left column align nicely */
+.two-col {
+  align-items: flex-start;
+}
+
+/* Desktop sizing */
+@media (min-width: 900px) {
+  .product-box {
+    max-width: 460px;   /* slightly larger for desktop */
+  }
 }
