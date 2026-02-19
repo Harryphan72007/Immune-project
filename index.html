@@ -4,74 +4,96 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BIOLAQA — Trang chủ</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="topbar">
-      <div class="container">
-        <div class="logo" aria-hidden="false">
-          <img src="assets/logo.svg" alt="BIOLAQA logo" style="width:46px;height:46px;border-radius:8px;background:#fff;padding:6px">
-          <div>
-            <div class="brand">BIOLAQA</div>
-            <div class="tagline">Board game giáo dục</div>
-          </div>
+<header class="header">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="Trang chủ">
+        <img class="brand__logo" src="assets/logo.svg" alt="BIOLAQA logo" onerror="this.style.display='none'">
+        <div class="brand__text">
+          <div class="brand__name">BIOLAQA</div>
+          <div class="brand__tag">Boardgame miễn dịch</div>
         </div>
-        <div class="icon-buttons" role="group" aria-label="Utility buttons">
-          <button class="icon-btn" id="cart-btn" aria-label="Giỏ hàng">
-            🛒 <span class="badge" id="cart-badge">0</span>
-          </button>
-          <button class="icon-btn" aria-label="Tài khoản">👤</button>
+      </a>
+      <div class="actions">
+        <button class="iconbtn" id="cart-btn" type="button" aria-label="Giỏ hàng">
+          🛒 <span class="badge" id="cart-badge">0</span>
+        </button>
+        <button class="iconbtn" type="button" aria-label="Tài khoản">👤</button>
+      </div>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__link is-active" href="index.html">TRANG CHỦ</a>
+      <a class="nav__link " href="product.html">GIỚI THIỆU</a>
+      <a class="nav__link " href="guide.html">HƯỚNG DẪN CHƠI</a>
+      <a class="nav__link " href="digital.html">BẢN ĐIỆN TỬ</a>
+      <a class="nav__link " href="contact.html">LIÊN HỆ</a>
+    </div>
+  </nav>
+</header>
+
+<main class="main">
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1 class="hero__title"><span class="hero__accent">CHẠM</span> VÀ SINH<br>MỞ TẦM NHÌN</h1>
+        <p class="hero__desc">
+          Boardgame giáo dục giúp nâng cao nhận thức về phòng chống dịch bệnh, sức khỏe,
+          y sinh học, kết hợp yếu tố công nghệ như AR 3D.
+        </p>
+        <div class="chips">
+          <span class="chip">Miễn dịch</span>
+          <span class="chip">Phòng chống dịch</span>
+          <span class="chip">Y sinh</span>
+        </div>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="product.html">Giới thiệu</a>
+          <a class="btn btn--ghost" href="guide.html">Xem hướng dẫn</a>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <div class="card mediaCard">
+          <img class="mediaImg" src="assets/product-photo.png" alt="Hộp trò chơi" onerror="this.src='assets/product-box.svg'">
         </div>
       </div>
     </div>
-    <nav class="nav" role="navigation" aria-label="Main navigation">
-      <div class="container">
-        <a href="index.html">TRANG CHỦ</a>
-        <a href="product.html">GIỚI THIỆU</a>
-        <a href="guide.html">HƯỚNG DẪN CHƠI</a>
-        <a href="digital.html">BẢN ĐIỆN TỬ</a>
-        <a href="contact.html">LIÊN HỆ</a>
-      </div>
-    </nav>
-  </header>
+  </section>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-left">
-        <h1 class="hero-title">CHẠM VÀ SINH<br> MỞ TẦM NHÌN</h1>
-        <p class="lead">Boardgame giúp phát triển tư duy, khám phá kiến thức sinh học theo cách tương tác và trực quan.</p>
-        <a class="pill" href="product.html">Giới thiệu</a>
-      </div>
-      <div class="hero-right">
-        <div class="product-box">
-          <img class="product-img" src="assets/product-photo.png" alt="BIOLAQA Product Box" onerror="this.onerror=null;this.src=\'assets/product-box.svg\';">
-</div>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="about-head"><span class="about-marker" aria-hidden="true"></span><strong class="about-title">ABOUT US</strong></div>
-      <div class="team" role="list">
-        <div class="member" role="listitem"><div class="avatar">N</div><div class="member-name">Nguyễn Phan Thùy Lâm</div></div>
-        <div class="member" role="listitem"><div class="avatar">A</div><div class="member-name">Trần Hòa An</div></div>
-        <div class="member" role="listitem"><div class="avatar">Q</div><div class="member-name">Phan Hoàng Quyên</div></div>
-        <div class="member" role="listitem"><div class="avatar">H</div><div class="member-name">Nguyễn Hà Anh</div></div>
-      </div>
-      <hr class="sep">
-      <p class="about-text">BioLAQA là trò chơi bảng giúp người chơi khám phá và học hỏi về thế giới sinh học thông qua nhiệm vụ và tương tác nhóm.</p>
-    </section>
-
-    <h2 class="big-title">Trang chủ</h2>
-  </main>
-
-  <footer class="footer" role="contentinfo">
+  <section class="section">
     <div class="container">
-      <div class="contact-small">📞 0862570073 • ✉️ biolaqalab@gmail.com</div>
-      <div class="partners"><div class="partner-label">ĐỐI TÁC</div><img src="assets/partner.svg" alt="Partner" class="partner-logo"></div>
-    </div>
-  </footer>
+      <div class="sectionHead">
+        <span class="mark"></span>
+        <h2 class="sectionTitle">ABOUT US</h2>
+      </div>
 
-  <script src="app.js"></script>
+      <div class="team" id="team-list"></div>
+      <hr class="divider">
+      <p class="aboutText" id="about-text"></p>
+
+      <div class="pageStamp">Trang chủ</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <div class="footline">📞 <span id="foot-phone">0862570073</span></div>
+      <div class="footline">✉️ <span id="foot-email">biolaqalab@gmail.com</span></div>
+    </div>
+    <div class="footer__right">
+      <div class="footer__label">ĐỐI TÁC</div>
+      <img class="footer__partner" src="assets/partner.svg" alt="NHÀ THUỐC LONG CHÂU" onerror="this.style.display='none'">
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>

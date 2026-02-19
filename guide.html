@@ -4,27 +4,67 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BIOLAQA — Hướng dẫn chơi</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="topbar"><div class="container"><div class="logo"><img src="assets/logo.svg" alt="BIOLAQA" style="width:46px;height:46px;border-radius:6px;padding:6px;background:#fff"><div class="brand">BIOLAQA</div></div><div class="icon-buttons"><button class="icon-btn" id="cart-btn">🛒<span class="badge" id="cart-badge">0</span></button><button class="icon-btn">👤</button></div></div></div>
-    <nav class="nav"><div class="container"><a href="index.html">TRANG CHỦ</a><a href="product.html">GIỚI THIỆU</a><a href="guide.html">HƯỚNG DẪN CHƠI</a><a href="digital.html">BẢN ĐIỆN TỬ</a><a href="contact.html">LIÊN HỆ</a></div></nav>
-  </header>
-
-  <main class="container">
-    <div class="section-label">Video hướng dẫn</div>
-    <div class="video-wrap">
-      <div class="video-frame" role="region" aria-label="Video hướng dẫn">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video hướng dẫn" frameborder="0" allowfullscreen style="border-radius:8px"></iframe>
+<header class="header">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="Trang chủ">
+        <img class="brand__logo" src="assets/logo.svg" alt="BIOLAQA logo" onerror="this.style.display='none'">
+        <div class="brand__text">
+          <div class="brand__name">BIOLAQA</div>
+          <div class="brand__tag">Boardgame miễn dịch</div>
+        </div>
+      </a>
+      <div class="actions">
+        <button class="iconbtn" id="cart-btn" type="button" aria-label="Giỏ hàng">
+          🛒 <span class="badge" id="cart-badge">0</span>
+        </button>
+        <button class="iconbtn" type="button" aria-label="Tài khoản">👤</button>
       </div>
     </div>
+  </div>
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__link " href="index.html">TRANG CHỦ</a>
+      <a class="nav__link " href="product.html">GIỚI THIỆU</a>
+      <a class="nav__link is-active" href="guide.html">HƯỚNG DẪN CHƠI</a>
+      <a class="nav__link " href="digital.html">BẢN ĐIỆN TỬ</a>
+      <a class="nav__link " href="contact.html">LIÊN HỆ</a>
+    </div>
+  </nav>
+</header>
 
-    <h2 class="big-title">Hướng dẫn chơi</h2>
-  </main>
+<main class="main">
+  <section class="section">
+    <div class="container">
+      <div class="kicker">Video hướng dẫn</div>
+      <div class="card videoCard">
+        <iframe class="videoFrame"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Video hướng dẫn"
+          allowfullscreen></iframe>
+      </div>
+      <div class="pageStamp pageStamp--center">Hướng dẫn chơi</div>
+    </div>
+  </section>
 
-  <footer class="footer"><div class="container"><div>📞 0862570073 • ✉️ biolaqalab@gmail.com</div><div class="partners"><div class="partner-label">ĐỐI TÁC</div><img src="assets/partner.svg" alt="partner" class="partner-logo"></div></div></footer>
+</main>
 
-  <script src="app.js"></script>
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <div class="footline">📞 <span id="foot-phone">0862570073</span></div>
+      <div class="footline">✉️ <span id="foot-email">biolaqalab@gmail.com</span></div>
+    </div>
+    <div class="footer__right">
+      <div class="footer__label">ĐỐI TÁC</div>
+      <img class="footer__partner" src="assets/partner.svg" alt="NHÀ THUỐC LONG CHÂU" onerror="this.style.display='none'">
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>
