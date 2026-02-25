@@ -111,7 +111,7 @@ a{color:inherit;text-decoration:none}
 /* Larger version for product page */
 .product-box--large{
   width: 50%;
-  max-width:520px;
+  max-width:200px;
   margin:0 auto;
 }
 
