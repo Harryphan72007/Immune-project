@@ -1,22 +1,14 @@
-# BIOLAQA Website (GitHub Pages Ready)
+# BIOLAQA Website (Self-host)
 
-This is a static multi-page website (HTML/CSS/JS).
+## Run locally (recommended)
+### Option A: Python http server
+```bash
+python -m http.server 8000
+```
+Open: http://localhost:8000
 
-## Run locally (simple)
-Open `index.html` in your browser, or use a local static server (optional).
+### Option B: VS Code Live Server
+Right click `index.html` -> Open with Live Server
 
-## Deploy on GitHub Pages
-1. Create a GitHub repo and upload all files in this folder (keep the same structure).
-2. Go to **Settings → Pages**
-3. Source: **Deploy from a branch**
-4. Branch: **main** / Folder: **/** (root)
-5. Save — your site will be live on GitHub Pages.
-
-Pages:
-- `index.html`
-- `product.html`
-- `guide.html`
-- `digital.html`
-- `contact.html`
-
-Assets are in `/assets`.
+## Notes
+- Homepage includes Facebook embeds (iframes). These require internet access and may be blocked by browser privacy settings or ad blockers.

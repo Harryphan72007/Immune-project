@@ -4,77 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BIOLAQA — Liên hệ</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="index.html" aria-label="Trang chủ">
-        <img class="brand__logo" src="assets/logo.svg" alt="BIOLAQA logo" onerror="this.style.display='none'">
-        <div class="brand__text">
-          <div class="brand__name">BIOLAQA</div>
-          <div class="brand__tag">Boardgame miễn dịch</div>
-        </div>
-      </a>
-      <div class="actions">
-        <button class="iconbtn" id="cart-btn" type="button" aria-label="Giỏ hàng">
-          🛒 <span class="badge" id="cart-badge">0</span>
-        </button>
-        <button class="iconbtn" type="button" aria-label="Tài khoản">👤</button>
+  <header>
+    <div class="topbar"><div class="container"><div class="logo"><img src="logo.svg" alt="BIOLAQA" style="width:46px;height:46px;border-radius:6px;padding:6px;background:#fff"><div class="brand">BIOLAQA</div></div><div class="icon-buttons"><button class="icon-btn" id="cart-btn">🛒<span class="badge" id="cart-badge">0</span></button><button class="icon-btn">👤</button></div></div></div>
+    <nav class="nav"><div class="container"><a href="index.html">TRANG CHỦ</a><a href="product.html">GIỚI THIỆU</a><a href="guide.html">HƯỚNG DẪN CHƠI</a><a href="digital.html">BẢN ĐIỆN TỬ</a><a href="contact.html">LIÊN HỆ</a></div></nav>
+  </header>
+
+  <main class="container">
+    <section class="contact-wrap two-col">
+      <div class="contact-logo-block">
+        <img src="logo.svg" alt="BIOLAQA" style="max-width:160px">
       </div>
-    </div>
-  </div>
-  <nav class="nav">
-    <div class="container nav__inner">
-      <a class="nav__link " href="index.html">TRANG CHỦ</a>
-      <a class="nav__link " href="product.html">GIỚI THIỆU</a>
-      <a class="nav__link " href="guide.html">HƯỚNG DẪN CHƠI</a>
-      <a class="nav__link " href="digital.html">BẢN ĐIỆN TỬ</a>
-      <a class="nav__link is-active" href="contact.html">LIÊN HỆ</a>
-    </div>
-  </nav>
-</header>
-
-<main class="main">
-  <section class="section">
-    <div class="container contactGrid">
-      <div class="card contactLogo">
-        <img class="contactLogoImg" src="assets/logo.svg" alt="BIOLAQA logo" onerror="this.style.display='none'">
-        <div class="contactLogoName">BIOLAQA</div>
+      <div class="contact-info">
+        <h3>THÔNG TIN LIÊN HỆ</h3>
+        <p><strong>Điện thoại:</strong> 0862570073</p>
+        <p><strong>Email:</strong> biolaqalab@gmail.com</p>
+        <p><strong>Facebook:</strong> (placeholder)</p>
+        <p><strong>Tiktok:</strong> <a href="https://www.tiktok.com/@biolaqalab">https://www.tiktok.com/@biolaqalab</a></p>
       </div>
+    </section>
 
-      <div class="card">
-        <h3 class="cardTitle">THÔNG TIN LIÊN HỆ</h3>
-        <ul class="contactList">
-          <li><strong>Điện thoại:</strong> <span id="contact-phone">0862570073</span></li>
-          <li><strong>Email:</strong> <span id="contact-email">biolaqalab@gmail.com</span></li>
-          <li><strong>Facebook:</strong> <a id="contact-fb" href="https://www.facebook.com/" target="_blank" rel="noreferrer">https://www.facebook.com/</a></li>
-          <li><strong>Tiktok:</strong> <a id="contact-tt" href="https://www.tiktok.com/@biolaqalab" target="_blank" rel="noreferrer">https://www.tiktok.com/@biolaqalab</a></li>
-        </ul>
-      </div>
-    </div>
+    <h2 class="big-title">Liên hệ</h2>
+  </main>
 
-    <div class="container">
-      <div class="pageStamp pageStamp--center">Liên hệ</div>
-    </div>
-  </section>
+  <footer class="footer"><div class="container"><div>📞 0862570073 • ✉️ biolaqalab@gmail.com</div><div class="partners"><div class="partner-label">ĐỐI TÁC</div><div class="partner-logos"><img src="partner.png" alt="Nhà thuốc Long Châu" class="partner-logo"></div></div></div></footer>
 
-</main>
-
-<footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__left">
-      <div class="footline">📞 <span id="foot-phone">0862570073</span></div>
-      <div class="footline">✉️ <span id="foot-email">biolaqalab@gmail.com</span></div>
-    </div>
-    <div class="footer__right">
-      <div class="footer__label">ĐỐI TÁC</div>
-      <img class="footer__partner" src="assets/partner.svg" alt="NHÀ THUỐC LONG CHÂU" onerror="this.style.display='none'">
-    </div>
-  </div>
-</footer>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

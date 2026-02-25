@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-label="Product box placeholder">
+  <defs>
+    <linearGradient id="p" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4f7c"/>
+      <stop offset="1" stop-color="#ffa24a"/>
+    </linearGradient>
+    <linearGradient id="q" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3ddc97"/>
+      <stop offset="1" stop-color="#46a2ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="620" height="400" rx="26" fill="white" stroke="#e5e7eb" stroke-width="6"/>
+  <rect x="46" y="62" width="548" height="296" rx="22" fill="url(#p)" opacity="0.18"/>
+  <rect x="60" y="76" width="520" height="268" rx="18" fill="white" opacity="0.65"/>
+  <g transform="translate(92,120)">
+    <rect x="0" y="0" width="140" height="140" rx="28" fill="url(#q)"/>
+    <path d="M52 28h36v10h-7v38l26 44c4 7-1 16-10 16H43c-9 0-14-9-10-16l26-44V38h-7V28z"
+          fill="white" opacity="0.9"/>
+  </g>
+  <text x="270" y="165" font-family="system-ui,Segoe UI,Arial" font-size="42" font-weight="900" fill="#ff4f7c">
+    BIOLAQA
+  </text>
+  <text x="270" y="212" font-family="system-ui,Segoe UI,Arial" font-size="28" font-weight="800" fill="#111">
+    Product Box
+  </text>
+  <text x="270" y="252" font-family="system-ui,Segoe UI,Arial" font-size="18" font-weight="700" fill="#6b7280">
+    Replace this with your real image later
+  </text>
+</svg>
