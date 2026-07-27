@@ -1,32 +1,18 @@
 <!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BIOLAQA — Bản điện tử</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>BIOLAQA — Bản điện tử</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-  <header>
-    <div class="topbar"><div class="container"><div class="logo"><img src="logo.jpg" alt="BIOLAQA" style="width:100px;height:100px;border-radius:6px;padding:6px;background:#fff"><div class="brand">BIOLAQA</div></div><div class="icon-buttons"><button class="icon-btn" id="cart-btn">🛒<span class="badge" id="cart-badge">0</span></button><button class="icon-btn">👤</button></div></div></div>
-    <nav class="nav"><div class="container"><a href="index.html">TRANG CHỦ</a><a href="product.html">GIỚI THIỆU</a><a href="guide.html">HƯỚNG DẪN CHƠI</a><a href="digital.html">BẢN ĐIỆN TỬ</a><a href="contact.html">LIÊN HỆ</a></div></nav>
+  <header><div class="topbar"><div class="container"><div class="logo"><img src="logo.jpg" alt="BIOLAQA" width="100" height="100"><div class="brand">BIOLAQA</div></div></div></div>
+    <nav class="nav" aria-label="Điều hướng chính"><div class="container"><a href="index.html">TRANG CHỦ</a><a href="product.html">GIỚI THIỆU</a><a href="guide.html">HƯỚNG DẪN</a><a href="digital.html">BẢN ĐIỆN TỬ</a><a href="contact.html">LIÊN HỆ</a></div></nav>
   </header>
-
   <main class="container">
-    <div class="section-label">Nhập code</div>
-    <form id="code-form" onsubmit="return false;" style="margin-top:10px">
-      <div class="code-row">
-        <input id="code-input" class="code-input" aria-label="Nhập mã" placeholder="Nhập mã tại đây">
-        <button id="activate-btn" class="activate-btn">Kích hoạt</button>
-      </div>
-      <div id="code-message" class="message" role="status" aria-live="polite"></div>
-    </form>
-
-    <h2 class="big-title">Điện tử</h2>
+    <h1 class="big-title">Bản điện tử</h1>
+    <section class="about">
+      <p class="about-text"><strong>Demo only:</strong> trang tĩnh không thể bảo vệ hoặc xác minh quyền truy cập. Mã kích hoạt thật phải được kiểm tra trên máy chủ có xác thực.</p>
+      <form id="code-form"><label for="code-input">Mã demo</label><input id="code-input" disabled placeholder="Activation disabled"><button class="pill" type="submit">Kiểm tra kiến trúc</button><p id="code-message" aria-live="polite"></p></form>
+    </section>
   </main>
-
-  <footer class="footer"><div class="container"><div>📞 0862570073 • ✉️ biolaqalab@gmail.com</div><div class="partners"><div class="partner-label">ĐỐI TÁC</div><div class="partner-logos"><img src="partner.png" alt="Nhà thuốc Long Châu" class="partner-logo"></div></div></div></footer>
-
+  <footer class="footer"><div class="container"><div>No client-side access codes</div></div></footer>
   <script src="app.js"></script>
 </body>
 </html>
