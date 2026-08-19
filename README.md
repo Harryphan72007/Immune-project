@@ -44,6 +44,18 @@ python -m http.server 8000
 
 Open `http://localhost:8000`.
 
+## Verification
+
+The repository includes a dependency-free integrity check for required pages, document metadata,
+duplicate IDs, fragment links, and local assets:
+
+```bash
+node --check app.js
+node scripts/check-site.mjs
+```
+
+GitHub Actions runs both checks for pull requests and pushes to `main`.
+
 ## Project structure
 
 ```text
